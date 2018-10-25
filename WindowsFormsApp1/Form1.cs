@@ -126,6 +126,7 @@ namespace WindowsFormsApp1
                 spentAmount = (Money)spentCoin.Amount.Add(spentAmount);
                 textBox1.AppendText("spentAmount.ToDecimal(MoneyUnit.BTC)：" + spentAmount.ToDecimal(MoneyUnit.BTC) + Environment.NewLine);
             }
+
             // feeがnullで飛ぶ。
             //var fee = transaction.GetFee(spentCoins.ToArray());
             //textBox1.AppendText("fee：" + fee.ToString() + Environment.NewLine);
